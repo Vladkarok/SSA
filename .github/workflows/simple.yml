@@ -1,0 +1,15 @@
+name: Echo my name via bash script
+on:
+  push:
+    branches:
+      - main
+jobs:
+  echoing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cloning my repo
+      - uses: actions/checkout@v1
+      - name: List files
+        run: ls -la
+      - name: Run script
+        run: bash SSA/script.sh
