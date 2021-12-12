@@ -12,4 +12,4 @@ jobs:
       - name: List files
         run: ls -la
       - name: Run script
-        run: bash SSA/script.sh
+        run: bash script.sh
